@@ -1,0 +1,53 @@
+.button {    
+    width: 215px;
+}
+
+.radio-button {
+	height: 45px;
+	color: white;
+	margin-right: 15px;
+}
+
+.light-yellow-button {
+	background-color: #FFEBBF;
+}
+
+.light-yellow-button:hover {
+	background-color: rgba(255, 235, 191, 0.5);
+}
+
+.bright-yellow-button {
+	background-color: #F0D442;
+}
+
+.bright-yellow-button:hover {
+	background-color: rgba(240, 212, 66, 0.5);
+}
+
+.green-button {
+	background-color: #85A29E;
+}
+
+.green-button:hover {
+	background-color: rgba(133, 162, 158, 0.5);
+}
+
+.orange-button {
+	background-color: #F59330;
+}
+
+.orange-button:hover {
+	background-color: rgba(245, 147, 48, 0.5);
+}
+
+.bordo-button {
+	background-color: #B22148;
+}
+
+.bordo-button:hover {
+	background-color: rgba(178, 33, 72, 0.5);
+}
+
+.multichoice {
+	margin-top: 50px;
+}

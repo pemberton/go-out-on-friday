@@ -1,0 +1,38 @@
+.button {
+    display: inline-block;
+    height: 25px;    
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+	border: solid 1px #A7A7A7;
+    color: #443A37;    
+}
+
+.driving-buttons {	
+	float: right;
+	margin-top: 150px;
+}
+
+.driving-buttons a {
+	margin-left: 25px;
+}
+
+.main-button {
+	background: rgba(240, 212, 66, 1);
+}
+
+.main-button:hover {
+	background: rgba(240, 212, 66, 0.5);
+}
+
+.normal-button {
+	background: white;
+}
+
+.normal-button:hover {
+	background: rgba(240, 212, 66, 0.5);
+}
+
+.standart-button {    
+    width: 115px;
+}
