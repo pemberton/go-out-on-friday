@@ -1,7 +1,11 @@
 ﻿namespace FeatureFolder
 {
-    public interface IQuery<TRequestModel, TResponseModel>
+    public interface IQuery
     {
-        TResponseModel Query(TRequestModel request);
+    }
+
+    public interface IQueryResult
+    {
+
     }
 }
