@@ -1,8 +1,0 @@
-D:\go-out-on-friday\GoOutOnFriday\Tests\bin\Debug\Tests.dll
-D:\go-out-on-friday\GoOutOnFriday\Tests\bin\Debug\Tests.pdb
-D:\go-out-on-friday\GoOutOnFriday\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\go-out-on-friday\GoOutOnFriday\Tests\bin\Debug\WebDriver.dll
-D:\go-out-on-friday\GoOutOnFriday\Tests\bin\Debug\WebDriver.xml
-D:\go-out-on-friday\GoOutOnFriday\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
-D:\go-out-on-friday\GoOutOnFriday\Tests\obj\Debug\Tests.dll
-D:\go-out-on-friday\GoOutOnFriday\Tests\obj\Debug\Tests.pdb
