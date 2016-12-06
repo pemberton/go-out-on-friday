@@ -5,3 +5,14 @@ GoOutOnFriday/src/GoOutOnFriday/obj/
 GoOutOnFriday/src/FeatureFolder/obj/
 GoOutOnFriday/src/FeatureFolder/bin/Debug/netstandard1.6/FeatureFolder.pdb
 GoOutOnFriday/src/FeatureFolder/bin/
+.idea
+node_modules
+jspm_packages
+npm-debug.*
+link-checker-results.txt
+app/**/*.js
+*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
+_test-output
+_temp
