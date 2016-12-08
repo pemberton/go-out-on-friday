@@ -16,3 +16,7 @@ e2e/**/*.js
 e2e/**/*.js.map
 _test-output
 _temp
+FridayNight.Web/src/FeatureFolder/bin/
+FridayNight.Web/src/FeatureFolder/obj/
+FridayNight.Web/src/FridayNight.Web/obj/
+FridayNight.Web/src/FridayNight.Web/bin/
