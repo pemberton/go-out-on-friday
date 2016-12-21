@@ -1,31 +1,28 @@
 import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { Observable }     from 'rxjs/Observable';
 
 import { Event } from './event';
 
 @Injectable()
 export class EventService {
 
-    cityEvent: Event = {
-        id: 1,
-        name: 'Фестиваль тыквы',
-        shortDescription: '',
-        description: '',
-        pathToMap: '',
-        address: '',
-        siteAddress: '',
-        timetable: {
-        startDay: new Date('2017-08-16T00:00:00'),
-        endDay: new Date('2017-09-30T00:00:00'),
-        startHour: 10,
-        endHour: 22
-        },
-        imagePathes: null
-    };
+    private eventUrl = 'localhost:47987/api/events/17';
 
+    constructor(private http: Http) {}
 
-    getEvent(): Promise<Event> {
-        return new Promise(x =>
-            setTimeout(x, 2000))
-            .then(() =>  this.cityEvent);
+    getEvent(id: number): Observable<Event> {
+        return this.http.get(this.eventUrl)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
+    private extractData(res: Response) {
+        let body = res.json();
+        return body.data || { };
+    }
+
+    private handleError (error: Response | any) {
+        return Observable.throw('some error occured');
     }
 }

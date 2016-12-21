@@ -44,10 +44,13 @@ import { EventService } from './event.service';
 
 export class EventDetailComponent implements OnInit {    
     event: Event;
+    errorMessage: String;
 
     ngOnInit(): void {
-        this.eventService.getEvent()
-            .then(e => this.event = e);
+        this.eventService.getEvent(17)
+            .subscribe(
+                    e => this.event = e,
+                    error => this.errorMessage = error);
     }
 
     constructor(private eventService: EventService) { }
