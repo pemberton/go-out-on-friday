@@ -10,12 +10,7 @@ import { EventService } from './event.service';
         <div class="group">
             <div class="left">
                 <div class="photos">
-                    <img src="images/pumpkin1.jpg" alt="pumpkin">
-                    <img src="images/pumpkin2.jpg" alt="pumpkin">
-                    <img src="images/pumpkin3.jpg" alt="pumpkin">
-                    <img src="images/pumpkin4.jpg" alt="pumpkin">
-                    <img src="images/pumpkin5.jpg" alt="pumpkin">
-                    <img src="images/pumpkin-big.jpg">
+                    <li *ngFor="let imagePath of event.imagePathes"><img src="{{imagePath}}" alt="pumpkin"></li>
                 </div>
             </div>
             <div class="right">			
@@ -49,7 +44,10 @@ export class EventDetailComponent implements OnInit {
     ngOnInit(): void {
         this.eventService.getEvent(17)
             .subscribe(
-                    e => this.event = e,
+                    e => { 
+                           this.event = e;
+                           console.log(this.event)
+                    },
                     error => this.errorMessage = error);
     }
 

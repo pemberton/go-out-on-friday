@@ -49,7 +49,8 @@ namespace FridayNight.Web
 
             services.AddCors(options =>
             {
-                options.AddPolicy("SiteCorsPolicy", corsBuilder.Build());
+                options.AddPolicy("AllowAnyOrigin",
+                    builder => builder.AllowAnyOrigin());
             });
         }
 
@@ -59,12 +60,14 @@ namespace FridayNight.Web
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseCors("AllowAnyOrigin");
+
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
             app.UseMvc();
 
-            app.UseCors("SiteCorsPolicy");
+            
         }
     }
 }

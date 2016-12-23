@@ -7,7 +7,7 @@ import { Event } from './event';
 @Injectable()
 export class EventService {
 
-    private eventUrl = 'localhost:47987/api/events/17';
+    private eventUrl = 'http://localhost:47987/api/events/22';
 
     constructor(private http: Http) {}
 

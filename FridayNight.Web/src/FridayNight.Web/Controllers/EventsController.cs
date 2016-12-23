@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Cors;
 
 namespace GoOutOnFriday.Controllers
 {
-    [EnableCors("SiteCorsPolicy")]
     [Route("api/[controller]")]
     public class EventsController : Controller
     {
@@ -29,7 +28,7 @@ namespace GoOutOnFriday.Controllers
                 return NotFound();
             }
 
-            return new ObjectResult(result);
+            return new ObjectResult( new { data = result });
         }
 
         public async Task<IActionResult> Get(DateTime startPeriod, DateTime endPeriod)
@@ -48,7 +47,7 @@ namespace GoOutOnFriday.Controllers
                 return NotFound();
             }
 
-            return new ObjectResult(result);
+            return new ObjectResult( new { data = result });
         }
     }
 }

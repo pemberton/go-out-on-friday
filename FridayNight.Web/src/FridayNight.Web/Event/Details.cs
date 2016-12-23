@@ -44,8 +44,22 @@ namespace GoOutOnFriday.Event
             {
                 var model = new Response
                 {
-
+                    Id = request.Id,
+                    Name = "Фестиваль тыквы",
+                    ShortDescription = "Тыква и тыква",
+                    Description = "Тыква как она есть",
+                    PathToMap = "images/event-map.jpg",
+                    PathesToPictures = new List<string>()
                 };
+
+                ((List<string>)model.PathesToPictures)
+                    .AddRange(new string[] { "images/pumpkin1.jpg",
+                                             "images/pumpkin2.jpg",
+                                             "images/pumpkin3.jpg",
+                                             "images/pumpkin4.jpg",
+                                             "images/pumpkin5.jpg",
+                                             "images/pumpkin-big.jpg",
+                                           });
 
                 return Task.FromResult(model);
             }
