@@ -1,0 +1,19 @@
+<div class="wrap">
+	<div class="main-menu">
+		<a href="all-events.html">Войти</a>
+	</div>
+	<div class="header">
+		<h1>Party</h1>				
+	</div>
+	<div class="main-content">
+		<input class="time-selector" type="range" max=10/>
+		<div class="time-range left">30 августа</div>
+		<div class="time-range right">10 сентября</div>
+	</div>
+	<li *ngFor="let category of eventCategories">
+		<event-category></event-category>
+	</li>
+</div>
+<div class="footer">
+	<span>&copy; 2016 Все права защищены.</span>
+</div>
